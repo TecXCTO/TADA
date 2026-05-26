@@ -1,1 +1,14 @@
-threshold_rules.yaml         # Mathematical criteria for the rule engine
+# Mathematical criteria for the rule engine
+
+shaft:
+  min_aspect_ratio: 3.0
+plate:
+  max_thickness_to_area_ratio: 0.05
+fastener:
+  max_volume_mm3: 8000.0
+telemetry:
+  max_rms_vibration: 5.0
+  max_crest_factor: 6.0
+thermal:
+  brightness_threshold: 230
+  min_pixel_area: 10
