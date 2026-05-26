@@ -1,0 +1,14 @@
+{
+    "source_file": "part_0821.stl",
+    "automated_annotations": {
+        "engineering_class_name": "mounting_plate",
+        "metadata_properties": {
+            "calculated_volume_mm3": 12450.4,
+            "surface_area_mm2": 3200.15,
+            "bounding_box_lwh": [150.0, 80.0, 3.5],
+            "centroid_coordinates": [75.0, 40.0, 1.75]
+        },
+        "vertex_count": 4820,
+        "face_count": 9636
+    }
+}
