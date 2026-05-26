@@ -1,1 +1,31 @@
 
+name: Engineering Data Validation
+
+on: [push, pull_request]
+
+jobs:
+  validate_schema:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code Pipeline
+        uses: actions/checkout@v3
+
+      - name: Initialize Runtime Environment
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install Dependencies
+        run: |
+          pip install pyyaml
+
+      - name: Verify Configuration Integrity
+        run: |
+          python -c "
+          import yaml, os
+          assert os.path.exists('config/threshold_rules.yaml'), 'Missing configuration baseline file'
+          with open('config/threshold_rules.yaml') as f:
+              rules = yaml.safe_load(f)
+          assert 'shaft' in rules and 'telemetry' in rules, 'Invalid threshold baseline'
+          print('✅ Configuration schema rules verified.')
+          "
