@@ -1,0 +1,9 @@
+📁 tecx_cad_dataset/
+│
+├── 📁 train/
+│   ├── 📄 model_001.ply       <-- The raw manual 3D CAD points
+│   ├── 📄 model_001.txt       <-- Every row maps a point to a Name ID (e.g., x, y, z, Name_ID)
+│   ├── 📄 model_002.ply
+│   └── 📄 model_002.txt
+│
+└── 📄 class_names.json        <-- Your master engineering name dictionary
