@@ -1,1 +1,20 @@
 # Ensures large raw CAD files are not pushed to Git
+
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Local Engineering Data Repositories (Never commit heavy files to GitHub)
+data/raw_ingest/
+data/unified_labels/
+
+# Local configuration adjustments & environment secrets
+.venv/
+venv/
+ENV/
+.env
+.idea/
+.vscode/
+*.log
