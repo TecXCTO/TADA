@@ -1,0 +1,28 @@
+```json
+{
+    "cad_model_gearbox": {
+        "modality": "1_3D_CAD_Geometry",
+        "assigned_label": "transmission_shaft_axis",
+        "metrics": { "volume_mm3": 145200.5, "bounding_box_lwh": [12.0, 15.0, 180.0], "vertex_count": 2400 }
+    },
+    "bearing_vibration_sensor": {
+        "modality": "2_1D_Sensor_Telemetry",
+        "assigned_label": "mechanical_anomaly_vibration_spike",
+        "metrics": { "signal_rms_amplitude": 6.12, "crest_factor_ratio": 7.4, "detected_anomaly_timestamps_count": 4 }
+    },
+    "thermal_motor_image": {
+        "modality": "3_2D_Thermal_Vision",
+        "assigned_label": "critical_thermal_hotspot_detected",
+        "metrics": { "active_hotspot_zones": 1, "bounding_boxes_xywh": [{"x_min": 45, "y_min": 120, "width": 22, "height": 30, "pixel_area": 660}] }
+    },
+    "manufacturing_blueprint_pdf": {
+        "modality": "4_2D_Technical_Blueprints",
+        "assigned_label": "vector_metadata_complete_drawing",
+        "metrics": { "file_type_format": ".pdf", "extracted_notations_and_features": ["GD&T", "SCALE", "MATERIAL"] }
+    },
+    "robotic_arm_kinematic_log": {
+        "modality": "5_Kinematic_Robotics",
+        "assigned_label": "smooth_kinematic_trajectory",
+        "metrics": { "total_trajectory_distance_mm": 1240.52, "joint_spatial_variance": 14.21, "data_points_logged": 500 }
+    }
+}
