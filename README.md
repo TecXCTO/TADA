@@ -1,7 +1,12 @@
 # TADA
 Technology Engineering Computation Expansion Automated Data Annotation process
 
-GitHub Repository ArchitectureTo scale an automated data annotation pipeline as a solo engineer, your GitHub repository must be structured like a production-grade data engineering application. It separates data assets, configuration logic, core geometric parsing, and export handlers.
+# Pipeline setup and cross-modality execution documentation
+# Documentation on rules, dependencies, and execution
+
+# GitHub Repository Architecture
+
+To scale an automated data annotation pipeline as a solo engineer, your GitHub repository must be structured like a production-grade data engineering application. It separates data assets, configuration logic, core geometric parsing, and export handlers.
 
 ```
 ⚙️ mechanical-cad-auto-annotator/
