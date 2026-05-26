@@ -1,3 +1,11 @@
 # Software library versions
 
 # Package dependencies (opencv, trimesh, scipy, pandas)
+
+trimesh>=4.0.0
+scipy>=1.11.0
+pandas>=2.1.0
+opencv-python>=4.8.0
+pypdf>=3.17.0
+numpy>=1.26.0
+pyyaml>=6.0.1
