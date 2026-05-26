@@ -1,7 +1,89 @@
 # TADA
 Technology Engineering Computation Expansion Automated Data Annotation process
 
+
+# ⚙️ Universal Mechanical Engineering Auto-Annotator
+
+A production-grade, multi-modal automated data annotation pipeline built specifically for solo engineers. This framework completely eliminates manual labeling by programmatically analyzing mechanical engineering data structures and exporting AI-ready JSON notations.
+
+---
+
+## 🚀 Modality Infrastructure Coverage
+The system auto-labels datasets across five core engineering domains:
+1. **3D CAD Geometry**: Parses `.stl`, `.obj`, and `.ply` meshes to extract spatial profiles (e.g., shafts, brackets, plates).
+2. **1D Sensor Telemetry**: Processes industrial vibration/pressure time-series `.csv` data using wave signal processing.
+3. **2D Thermal Vision**: Segments gradient pixel intensities from infrared matrices to track structural hotspots.
+4. **2D Technical Blueprints**: Automatically parses engineering drawings and extracts metadata markers (e.g., GD&T notes).
+5. **Kinematic Robotics**: Tracks path coordinate variances to verify trajectory alignment and jitter errors.
+
+---
+
+## 🛠️ Installation & Setup
+
+1. Clone this repository structure into your local development workspace.
+2. Install the necessary system and engineering packages:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Initialize the default directory trees automatically by executing the program runner:
+   ```bash
+   python main.py
+   ```
+
+---
+
+## 📂 Expected Directory Layout
+Ensure your assets match the following repository structure:
+
+```text
+⚙️ mechanical-universal-auto-annotator/
+│
+├── 📁 config/
+│   ├── 📄 taxonomy.json           # Unified master AI labels
+│   └── 📄 threshold_rules.yaml    # Adjust design tolerances here
+│
+├── 📁 data/
+│   ├── 📁 raw_ingest/             # Place raw engineering assets here
+│   └── 📁 unified_labels/         # Output location for auto-generated JSONs
+│
+├── 📁 src/                        # Modular processing engines
+│   ├── 📜 cad_parser.py
+│   ├── 📜 telemetry_annotator.py
+│   ├── 📜 thermal_vision.py
+│   ├── 📜 blueprint_parser.py
+│   └── 📜 kinematic_tracker.py
+│
+└── 📄 main.py                     # Main execution entry point
+```
+
+---
+
+## 🎛️ Modifying Engineering Thresholds
+To adjust the criteria for how parts are labeled without modifying any code, open `config/threshold_rules.yaml` and modify the parameters:
+
+* Increase `min_aspect_ratio` if your shafts require tighter slender constraints.
+* Tweak `brightness_threshold` to isolate hotspots at different thermal sensor limits.
+* Modify `max_rms_vibration` to flag bearing faults at lower structural tolerances.
+
+---
+
+## 🏃 Execution Workflow
+1. Place your engineering files into their respective subfolders within `data/raw_ingest/`.
+2. Ensure file names follow standard naming rules:
+   * Kinematic files must contain the word **"kinematic"** (e.g., `robot_kinematic_log.csv`).
+   * Thermal images must contain the word **"thermal"** (e.g., `bearing_thermal.jpg`).
+3. Run the master pipeline manager:
+   ```bash
+   python main.py
+   ```
+4. Find your individual file pairs and the global dataset index ledger (`master_five_modality_manifest.json`) ready inside `data/unified_labels/`.
+
+
+
+
+   
 # Pipeline setup and cross-modality execution documentation
+
 # Documentation on rules, dependencies, and execution
 
 # GitHub Repository Architecture
