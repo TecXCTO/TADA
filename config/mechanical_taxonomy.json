@@ -1,1 +1,11 @@
 # Master IDs for parts, faults, and anomalies
+
+{
+  "modalities": {
+    "1_3D_CAD_Geometry": ["transmission_shaft_axis", "sheet_metal_plate", "custom_machined_component"],
+    "2_1D_Sensor_Telemetry": ["nominal_operating_state", "mechanical_anomaly_vibration_spike"],
+    "3_2D_Thermal_Vision": ["stable_thermal_gradient", "critical_thermal_hotspot_detected"],
+    "4_2D_Technical_Blueprints": ["vector_metadata_complete_drawing", "unstructured_pdf_drawing", "high_density_geometric_drawing", "low_density_schematic"],
+    "5_Kinematic_Robotics": ["smooth_kinematic_trajectory", "kinematic_jitter_anomaly"]
+  }
+}
